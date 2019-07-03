@@ -1,0 +1,1591 @@
+EESchema Schematic File Version 4
+LIBS:fireSound-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Mini J1
+U 1 1 5CE4A6BE
+P 1850 2050
+F 0 "J1" H 1907 2607 50  0000 C CNN
+F 1 "USB_B_Mini" H 1907 2516 50  0000 C CNN
+F 2 "custom:USB_Micro-B_GCT_USB3076-30-A" H 1907 2425 50  0000 C CNN
+F 3 "https://www.reichelt.at/micro-usb-einbaubuchse-typ-ab-5-pol-smd-mic-usb-abbu-p155040.html?&trstct=pol_6" H 2000 2000 50  0001 C CNN
+	1    1850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CE4BF7C
+P 2750 2250
+F 0 "R1" H 2820 2296 50  0000 L CNN
+F 1 "10k" H 2820 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2680 2250 50  0001 C CNN
+F 3 "~" H 2750 2250 50  0001 C CNN
+	1    2750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CE4DE4C
+P 2250 2450
+F 0 "R2" H 2320 2496 50  0000 L CNN
+F 1 "10k" H 2320 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2180 2450 50  0001 C CNN
+F 3 "~" H 2250 2450 50  0001 C CNN
+	1    2250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CE4EBB1
+P 2500 2350
+F 0 "R3" H 2570 2396 50  0000 L CNN
+F 1 "10k" H 2570 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2430 2350 50  0001 C CNN
+F 3 "~" H 2500 2350 50  0001 C CNN
+	1    2500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5CE4EF41
+P 1750 2600
+F 0 "#PWR0101" H 1750 2350 50  0001 C CNN
+F 1 "GND" H 1755 2427 50  0000 C CNN
+F 2 "" H 1750 2600 50  0001 C CNN
+F 3 "" H 1750 2600 50  0001 C CNN
+	1    1750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CE50A84
+P 1850 2600
+F 0 "#PWR0102" H 1850 2350 50  0001 C CNN
+F 1 "GND" H 1855 2427 50  0000 C CNN
+F 2 "" H 1850 2600 50  0001 C CNN
+F 3 "" H 1850 2600 50  0001 C CNN
+	1    1850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2600 1750 2450
+Wire Wire Line
+	1850 2600 1850 2450
+Wire Wire Line
+	2150 2050 2750 2050
+Wire Wire Line
+	2750 2050 2750 2100
+Wire Wire Line
+	2500 2200 2500 2150
+Wire Wire Line
+	2500 2150 2150 2150
+Wire Wire Line
+	2250 2300 2250 2250
+Wire Wire Line
+	2250 2250 2150 2250
+Wire Wire Line
+	2750 2400 2750 2650
+Wire Wire Line
+	2500 2500 2500 2650
+Wire Wire Line
+	2250 2600 2250 2650
+$Comp
+L power:+5V #PWR0106
+U 1 1 5CE54EF3
+P 3250 1700
+F 0 "#PWR0106" H 3250 1550 50  0001 C CNN
+F 1 "+5V" H 3265 1873 50  0000 C CNN
+F 2 "" H 3250 1700 50  0001 C CNN
+F 3 "" H 3250 1700 50  0001 C CNN
+	1    3250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1850 3250 1850
+Wire Wire Line
+	3250 1850 3250 1700
+$Comp
+L Device:CP C1
+U 1 1 5CE55FD6
+P 3250 2100
+F 0 "C1" H 3368 2146 50  0000 L CNN
+F 1 "680µF" H 3368 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_2816_7142Metric_Pad3.20x4.45mm_HandSolder" H 3288 1950 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-tantal-680-f-6v-125-c-t491d-680u-6-p206496.html?&trstct=pol_1" H 3250 2100 50  0001 C CNN
+	1    3250 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2650 3250 2250
+Wire Wire Line
+	3250 1950 3250 1850
+Connection ~ 3250 1850
+Wire Wire Line
+	1950 3850 1950 3950
+Wire Wire Line
+	1950 3450 1950 3550
+$Comp
+L power:GND #PWR0108
+U 1 1 5CE5F9FA
+P 1950 3950
+F 0 "#PWR0108" H 1950 3700 50  0001 C CNN
+F 1 "GND" H 1955 3777 50  0000 C CNN
+F 2 "" H 1950 3950 50  0001 C CNN
+F 3 "" H 1950 3950 50  0001 C CNN
+	1    1950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 5CE5F382
+P 1950 3450
+F 0 "#PWR0109" H 1950 3300 50  0001 C CNN
+F 1 "+5V" H 1965 3623 50  0000 C CNN
+F 2 "" H 1950 3450 50  0001 C CNN
+F 3 "" H 1950 3450 50  0001 C CNN
+	1    1950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5CE5CC88
+P 1950 3700
+F 0 "C3" H 2065 3746 50  0000 L CNN
+F 1 "470n" H 2065 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1988 3550 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-kerko-470-nf-16-v-10-125-c-mur-grm188r61c47-p246847.html?&trstct=pos_0" H 1950 3700 50  0001 C CNN
+	1    1950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3600 2750 3900
+$Comp
+L power:+5V #PWR0110
+U 1 1 5CE5B5D9
+P 2750 3600
+F 0 "#PWR0110" H 2750 3450 50  0001 C CNN
+F 1 "+5V" H 2765 3773 50  0000 C CNN
+F 2 "" H 2750 3600 50  0001 C CNN
+F 3 "" H 2750 3600 50  0001 C CNN
+	1    2750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 5750 2750 5700
+$Comp
+L power:GND #PWR0111
+U 1 1 5CE5A42A
+P 2750 5750
+F 0 "#PWR0111" H 2750 5500 50  0001 C CNN
+F 1 "GND" H 2755 5577 50  0000 C CNN
+F 2 "" H 2750 5750 50  0001 C CNN
+F 3 "" H 2750 5750 50  0001 C CNN
+	1    2750 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny84A-SSU U1
+U 1 1 5CE56BB2
+P 2750 4800
+F 0 "U1" H 2220 4846 50  0000 R CNN
+F 1 "ATtiny84A-SSU" H 2220 4755 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2750 4800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf" H 2750 4800 50  0001 C CNN
+	1    2750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5CE569A9
+P 3250 2650
+F 0 "#PWR0107" H 3250 2400 50  0001 C CNN
+F 1 "GND" H 3255 2477 50  0000 C CNN
+F 2 "" H 3250 2650 50  0001 C CNN
+F 3 "" H 3250 2650 50  0001 C CNN
+	1    3250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5CE541EE
+P 2750 2650
+F 0 "#PWR0105" H 2750 2400 50  0001 C CNN
+F 1 "GND" H 2755 2477 50  0000 C CNN
+F 2 "" H 2750 2650 50  0001 C CNN
+F 3 "" H 2750 2650 50  0001 C CNN
+	1    2750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5CE53EA7
+P 2500 2650
+F 0 "#PWR0104" H 2500 2400 50  0001 C CNN
+F 1 "GND" H 2505 2477 50  0000 C CNN
+F 2 "" H 2500 2650 50  0001 C CNN
+F 3 "" H 2500 2650 50  0001 C CNN
+	1    2500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5CE53A45
+P 2250 2650
+F 0 "#PWR0103" H 2250 2400 50  0001 C CNN
+F 1 "GND" H 2255 2477 50  0000 C CNN
+F 2 "" H 2250 2650 50  0001 C CNN
+F 3 "" H 2250 2650 50  0001 C CNN
+	1    2250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q1
+U 1 1 5CE6D7CF
+P 5850 1650
+F 0 "Q1" H 6056 1696 50  0000 L CNN
+F 1 "AO3415A" H 6056 1605 50  0000 L CNN
+F 2 "custom:AO3415A_SOT-23" H 6050 1750 50  0001 C CNN
+F 3 "https://www.reichelt.at/mosfet-p-ch-20v-4a-1-5w-sot-23-ao-3415a-p166474.html?PROVID=2788&wt_gata=10744017114_61983121314&PROVID=2788&gclid=CjwKCAjw5pPnBRBJEiwAULZKvooy6sl1u6mIRM2BeH19CBA1TXQNAr5Vg4joj2R3eicyHC0IisL_eRoCS1AQAvD_BwE&&r=1" H 5850 1650 50  0001 C CNN
+	1    5850 1650
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Q_NMOS_DSG Q2
+U 1 1 5CE74C1B
+P 5850 2300
+F 0 "Q2" H 6056 2346 50  0000 L CNN
+F 1 "Q_NMOS_IRLML6244" H 6056 2255 50  0000 L CNN
+F 2 "custom:IRLML6244_SOT-23 - Kopie" H 6050 2400 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/A200/DS_IRLML6244-IR.pdf" H 5850 2300 50  0001 C CNN
+	1    5850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5CE75CF0
+P 5950 2650
+F 0 "#PWR0112" H 5950 2400 50  0001 C CNN
+F 1 "GND" H 5955 2477 50  0000 C CNN
+F 2 "" H 5950 2650 50  0001 C CNN
+F 3 "" H 5950 2650 50  0001 C CNN
+	1    5950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 5CE7645C
+P 5950 1350
+F 0 "#PWR0113" H 5950 1200 50  0001 C CNN
+F 1 "+5V" H 5965 1523 50  0000 C CNN
+F 2 "" H 5950 1350 50  0001 C CNN
+F 3 "" H 5950 1350 50  0001 C CNN
+	1    5950 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1350 5950 1450
+Wire Wire Line
+	5950 1850 5950 1950
+Wire Wire Line
+	5950 2500 5950 2650
+$Comp
+L Device:C C2
+U 1 1 5CE77CB9
+P 1400 3700
+F 0 "C2" H 1515 3746 50  0000 L CNN
+F 1 "10µ" H 1515 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1438 3550 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 1400 3700 50  0001 C CNN
+	1    1400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5CE785F4
+P 1400 3950
+F 0 "#PWR0114" H 1400 3700 50  0001 C CNN
+F 1 "GND" H 1405 3777 50  0000 C CNN
+F 2 "" H 1400 3950 50  0001 C CNN
+F 3 "" H 1400 3950 50  0001 C CNN
+	1    1400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0115
+U 1 1 5CE78B9D
+P 1400 3450
+F 0 "#PWR0115" H 1400 3300 50  0001 C CNN
+F 1 "+5V" H 1415 3623 50  0000 C CNN
+F 2 "" H 1400 3450 50  0001 C CNN
+F 3 "" H 1400 3450 50  0001 C CNN
+	1    1400 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3450 1400 3550
+Wire Wire Line
+	1400 3850 1400 3950
+$Comp
+L Device:C C5
+U 1 1 5CE79C30
+P 6700 1950
+F 0 "C5" V 6448 1950 50  0000 C CNN
+F 1 "10µ" V 6539 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6738 1800 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 6700 1950 50  0001 C CNN
+	1    6700 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 1950 5950 1950
+Connection ~ 5950 1950
+Wire Wire Line
+	5950 1950 5950 2100
+$Comp
+L Device:C C6
+U 1 1 5CE7BAFB
+P 8000 2250
+F 0 "C6" H 7885 2204 50  0000 R CNN
+F 1 "10µ" H 7885 2295 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8038 2100 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 8000 2250 50  0001 C CNN
+	1    8000 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:B240 D1
+U 1 1 5CE7CC5D
+P 7150 2350
+F 0 "D1" V 7196 2271 50  0000 R CNN
+F 1 "B240" V 7105 2271 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 7150 2175 50  0001 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 7150 2350 50  0001 C CNN
+	1    7150 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5CE7E6CA
+P 7150 2650
+F 0 "#PWR0116" H 7150 2400 50  0001 C CNN
+F 1 "GND" H 7155 2477 50  0000 C CNN
+F 2 "" H 7150 2650 50  0001 C CNN
+F 3 "" H 7150 2650 50  0001 C CNN
+	1    7150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1950 7150 1950
+Wire Wire Line
+	7150 1950 7150 2200
+Wire Wire Line
+	7150 2500 7150 2650
+$Comp
+L Diode:B240 D2
+U 1 1 5CE7FC90
+P 7550 1950
+F 0 "D2" H 7550 2166 50  0000 C CNN
+F 1 "B240" H 7550 2075 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 7550 1775 50  0001 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 7550 1950 50  0001 C CNN
+	1    7550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5CE80C6B
+P 8000 2650
+F 0 "#PWR0117" H 8000 2400 50  0001 C CNN
+F 1 "GND" H 8005 2477 50  0000 C CNN
+F 2 "" H 8000 2650 50  0001 C CNN
+F 3 "" H 8000 2650 50  0001 C CNN
+	1    8000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1950 7400 1950
+Connection ~ 7150 1950
+Wire Wire Line
+	7700 1950 8000 1950
+Wire Wire Line
+	8000 1950 8000 2100
+Wire Wire Line
+	8000 2400 8000 2650
+$Comp
+L power:-5V #PWR0118
+U 1 1 5CE82705
+P 8000 1850
+F 0 "#PWR0118" H 8000 1700 50  0001 C CNN
+F 1 "-5V" H 8015 2023 50  0000 C CNN
+F 2 "" H 8000 1850 50  0001 C CNN
+F 3 "" H 8000 1850 50  0001 C CNN
+	1    8000 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1950 8000 1850
+Connection ~ 8000 1950
+$Comp
+L Device:CP C7
+U 1 1 5CE83A66
+P 8700 2250
+F 0 "C7" H 8818 2296 50  0000 L CNN
+F 1 "680µF" H 8818 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_2816_7142Metric_Pad3.20x4.45mm_HandSolder" H 8738 2100 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-tantal-680-f-6v-125-c-t491d-680u-6-p206496.html?&trstct=pol_1" H 8700 2250 50  0001 C CNN
+	1    8700 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8700 2100 8700 1950
+Wire Wire Line
+	8700 1950 8000 1950
+$Comp
+L power:GND #PWR0119
+U 1 1 5CE85953
+P 8700 2650
+F 0 "#PWR0119" H 8700 2400 50  0001 C CNN
+F 1 "GND" H 8705 2477 50  0000 C CNN
+F 2 "" H 8700 2650 50  0001 C CNN
+F 3 "" H 8700 2650 50  0001 C CNN
+	1    8700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2400 8700 2650
+Text GLabel 3800 4300 2    50   Input ~ 0
+SW_HI
+Text GLabel 3800 4400 2    50   Input ~ 0
+SW_LO
+Wire Wire Line
+	3800 4300 3350 4300
+Wire Wire Line
+	3800 4400 3350 4400
+Text GLabel 5500 1650 0    50   Output ~ 0
+SW_HI
+Text GLabel 5500 2300 0    50   Output ~ 0
+SW_LO
+Wire Wire Line
+	5500 1650 5650 1650
+Wire Wire Line
+	5500 2300 5650 2300
+$Comp
+L Device:C C4
+U 1 1 5CE990DF
+P 4900 1600
+F 0 "C4" H 5015 1646 50  0000 L CNN
+F 1 "10µ" H 5015 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4938 1450 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 4900 1600 50  0001 C CNN
+	1    4900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5CE990E5
+P 4900 1850
+F 0 "#PWR0120" H 4900 1600 50  0001 C CNN
+F 1 "GND" H 4905 1677 50  0000 C CNN
+F 2 "" H 4900 1850 50  0001 C CNN
+F 3 "" H 4900 1850 50  0001 C CNN
+	1    4900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0121
+U 1 1 5CE990EB
+P 4900 1350
+F 0 "#PWR0121" H 4900 1200 50  0001 C CNN
+F 1 "+5V" H 4915 1523 50  0000 C CNN
+F 2 "" H 4900 1350 50  0001 C CNN
+F 3 "" H 4900 1350 50  0001 C CNN
+	1    4900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1350 4900 1450
+Wire Wire Line
+	4900 1750 4900 1850
+$Comp
+L Connector:AudioJack2_Ground_Switch J2
+U 1 1 5CE9A99F
+P 4750 4450
+F 0 "J2" H 4782 4875 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 4782 4784 50  0000 C CNN
+F 2 "custom:Jack_3.5mm_Horizontal" H 4750 4650 50  0001 C CNN
+F 3 "~" H 4750 4650 50  0001 C CNN
+	1    4750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5CE5BE32
+P 4750 4900
+F 0 "#PWR0122" H 4750 4650 50  0001 C CNN
+F 1 "GND" H 4755 4727 50  0000 C CNN
+F 2 "" H 4750 4900 50  0001 C CNN
+F 3 "" H 4750 4900 50  0001 C CNN
+	1    4750 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4900 4750 4750
+$Comp
+L Amplifier_Operational:TL084 U2
+U 1 1 5CE5F0D4
+P 6850 4200
+F 0 "U2" H 6850 4567 50  0000 C CNN
+F 1 "TL084" H 6850 4476 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6800 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6900 4400 50  0001 C CNN
+	1    6850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U2
+U 4 1 5CE63BDF
+P 9000 4550
+F 0 "U2" H 9000 4917 50  0000 C CNN
+F 1 "TL084" H 9000 4826 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 8950 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9050 4750 50  0001 C CNN
+	4    9000 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U2
+U 5 1 5CE65026
+P 4900 6900
+F 0 "U2" H 4858 6946 50  0000 L CNN
+F 1 "TL084" H 4858 6855 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4850 7000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4950 7100 50  0001 C CNN
+	5    4900 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Potentiometer_Digital:MCP42010 U3
+U 1 1 5CE6E05F
+P 6250 5150
+F 0 "U3" H 6250 5831 50  0000 C CNN
+F 1 "MCP42010" H 6250 5740 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6250 5250 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf" H 6250 5250 50  0001 C CNN
+	1    6250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 5CE6FB4C
+P 4800 6500
+F 0 "#PWR0123" H 4800 6350 50  0001 C CNN
+F 1 "+5V" H 4815 6673 50  0000 C CNN
+F 2 "" H 4800 6500 50  0001 C CNN
+F 3 "" H 4800 6500 50  0001 C CNN
+	1    4800 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 6500 4800 6600
+Wire Wire Line
+	5900 7100 5900 7200
+$Comp
+L power:GND #PWR0125
+U 1 1 5CE7E08B
+P 5900 7200
+F 0 "#PWR0125" H 5900 6950 50  0001 C CNN
+F 1 "GND" H 5905 7027 50  0000 C CNN
+F 2 "" H 5900 7200 50  0001 C CNN
+F 3 "" H 5900 7200 50  0001 C CNN
+	1    5900 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5CE7E097
+P 5900 6950
+F 0 "C11" H 6015 6996 50  0000 L CNN
+F 1 "470n" H 6015 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5938 6800 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-kerko-470-nf-16-v-10-125-c-mur-grm188r61c47-p246847.html?&trstct=pos_0" H 5900 6950 50  0001 C CNN
+	1    5900 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5CE7E09D
+P 5350 6950
+F 0 "C10" H 5465 6996 50  0000 L CNN
+F 1 "10µ" H 5465 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5388 6800 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 5350 6950 50  0001 C CNN
+	1    5350 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5CE7E0A3
+P 5350 7200
+F 0 "#PWR0126" H 5350 6950 50  0001 C CNN
+F 1 "GND" H 5355 7027 50  0000 C CNN
+F 2 "" H 5350 7200 50  0001 C CNN
+F 3 "" H 5350 7200 50  0001 C CNN
+	1    5350 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 7100 5350 7200
+$Comp
+L power:-5V #PWR0127
+U 1 1 5CE7F4DE
+P 5350 6650
+F 0 "#PWR0127" H 5350 6500 50  0001 C CNN
+F 1 "-5V" H 5365 6823 50  0000 C CNN
+F 2 "" H 5350 6650 50  0001 C CNN
+F 3 "" H 5350 6650 50  0001 C CNN
+	1    5350 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U2
+U 3 1 5CE62596
+P 9000 5400
+F 0 "U2" H 9000 5767 50  0000 C CNN
+F 1 "TL084" H 9000 5676 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 8950 5500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9050 5600 50  0001 C CNN
+	3    9000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U2
+U 2 1 5CE60ACA
+P 6850 6050
+F 0 "U2" H 6850 6417 50  0000 C CNN
+F 1 "TL084" H 6850 6326 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6800 6150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6900 6250 50  0001 C CNN
+	2    6850 6050
+	1    0    0    1   
+$EndComp
+Text GLabel 3800 4600 2    50   Input ~ 0
+SCL
+Text GLabel 3800 4500 2    50   Input ~ 0
+CS
+Text GLabel 3800 4800 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	3350 4600 3800 4600
+Wire Wire Line
+	3800 4500 3350 4500
+Wire Wire Line
+	3800 4800 3350 4800
+Text GLabel 5700 4850 0    50   Output ~ 0
+SCL
+Text GLabel 5700 5150 0    50   Output ~ 0
+CS
+Text GLabel 5700 4950 0    50   Output ~ 0
+MOSI
+Wire Wire Line
+	5700 4850 5750 4850
+Wire Wire Line
+	5750 4950 5700 4950
+Wire Wire Line
+	5750 5150 5700 5150
+$Comp
+L Device:R R4
+U 1 1 5CEC0C55
+P 5200 5250
+F 0 "R4" H 5270 5296 50  0000 L CNN
+F 1 "10k" H 5270 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5130 5250 50  0001 C CNN
+F 3 "~" H 5200 5250 50  0001 C CNN
+	1    5200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5050 5200 5050
+Wire Wire Line
+	5200 5050 5200 5100
+$Comp
+L power:GND #PWR0129
+U 1 1 5CEC2DB5
+P 5200 5500
+F 0 "#PWR0129" H 5200 5250 50  0001 C CNN
+F 1 "GND" H 5205 5327 50  0000 C CNN
+F 2 "" H 5200 5500 50  0001 C CNN
+F 3 "" H 5200 5500 50  0001 C CNN
+	1    5200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5500 5200 5400
+$Comp
+L power:GND #PWR0130
+U 1 1 5CEC48BE
+P 6250 5700
+F 0 "#PWR0130" H 6250 5450 50  0001 C CNN
+F 1 "GND" H 6255 5527 50  0000 C CNN
+F 2 "" H 6250 5700 50  0001 C CNN
+F 3 "" H 6250 5700 50  0001 C CNN
+	1    6250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0131
+U 1 1 5CEC633D
+P 6250 4600
+F 0 "#PWR0131" H 6250 4450 50  0001 C CNN
+F 1 "+5V" H 6265 4773 50  0000 C CNN
+F 2 "" H 6250 4600 50  0001 C CNN
+F 3 "" H 6250 4600 50  0001 C CNN
+	1    6250 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4650 6250 4600
+$Comp
+L power:+5V #PWR0132
+U 1 1 5CEC8745
+P 5500 5450
+F 0 "#PWR0132" H 5500 5300 50  0001 C CNN
+F 1 "+5V" H 5515 5623 50  0000 C CNN
+F 2 "" H 5500 5450 50  0001 C CNN
+F 3 "" H 5500 5450 50  0001 C CNN
+	1    5500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5350 5650 5350
+Wire Wire Line
+	5650 5350 5650 5450
+Wire Wire Line
+	5650 5450 5500 5450
+Wire Wire Line
+	5750 5450 5650 5450
+Connection ~ 5650 5450
+Wire Wire Line
+	6750 4850 6750 4550
+Wire Wire Line
+	6750 4550 6500 4550
+Wire Wire Line
+	6500 4550 6500 4300
+Wire Wire Line
+	6500 4300 6550 4300
+Wire Wire Line
+	6750 4950 6900 4950
+Wire Wire Line
+	7250 4200 7150 4200
+Wire Wire Line
+	6750 5050 6900 5050
+Wire Wire Line
+	6900 5050 6900 4950
+Connection ~ 6900 4950
+Wire Wire Line
+	6900 4950 7250 4950
+Wire Wire Line
+	6750 5450 6750 5650
+Wire Wire Line
+	6750 5650 6500 5650
+Wire Wire Line
+	6500 5950 6550 5950
+Wire Wire Line
+	6750 5350 6850 5350
+Wire Wire Line
+	7250 6050 7150 6050
+Wire Wire Line
+	6750 5250 6850 5250
+Wire Wire Line
+	6850 5250 6850 5350
+Connection ~ 6850 5350
+Wire Wire Line
+	6850 5350 7250 5350
+$Comp
+L power:GND #PWR0133
+U 1 1 5CEDC2D2
+P 6450 6200
+F 0 "#PWR0133" H 6450 5950 50  0001 C CNN
+F 1 "GND" H 6455 6027 50  0000 C CNN
+F 2 "" H 6450 6200 50  0001 C CNN
+F 3 "" H 6450 6200 50  0001 C CNN
+	1    6450 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 6150 6450 6150
+Wire Wire Line
+	6450 6150 6450 6200
+$Comp
+L power:GND #PWR0134
+U 1 1 5CEDEB21
+P 6400 3950
+F 0 "#PWR0134" H 6400 3700 50  0001 C CNN
+F 1 "GND" H 6405 3777 50  0000 C CNN
+F 2 "" H 6400 3950 50  0001 C CNN
+F 3 "" H 6400 3950 50  0001 C CNN
+	1    6400 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 4100 6400 4100
+Wire Wire Line
+	6400 4100 6400 3950
+$Comp
+L Device:R R6
+U 1 1 5CEE1C2D
+P 5850 4300
+F 0 "R6" H 5920 4346 50  0000 L CNN
+F 1 "10k" H 5920 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5780 4300 50  0001 C CNN
+F 3 "~" H 5850 4300 50  0001 C CNN
+	1    5850 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5CEEA5B2
+P 5900 5950
+F 0 "R8" H 5970 5996 50  0000 L CNN
+F 1 "10k" H 5970 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5830 5950 50  0001 C CNN
+F 3 "~" H 5900 5950 50  0001 C CNN
+	1    5900 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 5700 6250 5650
+Wire Wire Line
+	6500 5650 6500 5950
+Wire Wire Line
+	6500 5950 6150 5950
+Connection ~ 6500 5950
+Wire Wire Line
+	5750 5950 5000 5950
+Wire Wire Line
+	5000 5950 5000 4550
+Wire Wire Line
+	5000 4550 4950 4550
+Wire Wire Line
+	4950 4450 5000 4450
+Wire Wire Line
+	5000 4450 5000 4550
+Connection ~ 5000 4550
+Wire Wire Line
+	6500 4300 6100 4300
+Connection ~ 6500 4300
+Wire Wire Line
+	5700 4300 5000 4300
+Wire Wire Line
+	5000 4300 5000 4350
+Wire Wire Line
+	5000 4350 4950 4350
+Wire Wire Line
+	4950 4250 5000 4250
+Wire Wire Line
+	5000 4250 5000 4300
+Connection ~ 5000 4300
+Wire Wire Line
+	3700 7050 3700 7150
+Wire Wire Line
+	3700 6650 3700 6750
+$Comp
+L power:+5V #PWR0135
+U 1 1 5CE7C25C
+P 3700 6650
+F 0 "#PWR0135" H 3700 6500 50  0001 C CNN
+F 1 "+5V" H 3715 6823 50  0000 C CNN
+F 2 "" H 3700 6650 50  0001 C CNN
+F 3 "" H 3700 6650 50  0001 C CNN
+	1    3700 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5CE7C256
+P 3700 7150
+F 0 "#PWR0136" H 3700 6900 50  0001 C CNN
+F 1 "GND" H 3705 6977 50  0000 C CNN
+F 2 "" H 3700 7150 50  0001 C CNN
+F 3 "" H 3700 7150 50  0001 C CNN
+	1    3700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5CE7C250
+P 3700 6900
+F 0 "C8" H 3815 6946 50  0000 L CNN
+F 1 "10µ" H 3815 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3738 6750 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 3700 6900 50  0001 C CNN
+	1    3700 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5CE7C24A
+P 4250 6900
+F 0 "C9" H 4365 6946 50  0000 L CNN
+F 1 "470n" H 4365 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4288 6750 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-kerko-470-nf-16-v-10-125-c-mur-grm188r61c47-p246847.html?&trstct=pos_0" H 4250 6900 50  0001 C CNN
+	1    4250 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0137
+U 1 1 5CE7C244
+P 4250 6650
+F 0 "#PWR0137" H 4250 6500 50  0001 C CNN
+F 1 "+5V" H 4265 6823 50  0000 C CNN
+F 2 "" H 4250 6650 50  0001 C CNN
+F 3 "" H 4250 6650 50  0001 C CNN
+	1    4250 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5CE7C23E
+P 4250 7150
+F 0 "#PWR0138" H 4250 6900 50  0001 C CNN
+F 1 "GND" H 4255 6977 50  0000 C CNN
+F 2 "" H 4250 7150 50  0001 C CNN
+F 3 "" H 4250 7150 50  0001 C CNN
+	1    4250 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6650 4250 6750
+Wire Wire Line
+	4250 7050 4250 7150
+Wire Wire Line
+	8000 5300 8000 5400
+Wire Wire Line
+	8000 4900 8000 5000
+$Comp
+L power:GND #PWR0139
+U 1 1 5CF10071
+P 8000 5400
+F 0 "#PWR0139" H 8000 5150 50  0001 C CNN
+F 1 "GND" H 8005 5227 50  0000 C CNN
+F 2 "" H 8000 5400 50  0001 C CNN
+F 3 "" H 8000 5400 50  0001 C CNN
+	1    8000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0140
+U 1 1 5CF10077
+P 8000 4900
+F 0 "#PWR0140" H 8000 4750 50  0001 C CNN
+F 1 "+5V" H 8015 5073 50  0000 C CNN
+F 2 "" H 8000 4900 50  0001 C CNN
+F 3 "" H 8000 4900 50  0001 C CNN
+	1    8000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 5CF1007D
+P 8000 5150
+F 0 "C15" H 8115 5196 50  0000 L CNN
+F 1 "470n" H 8115 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8038 5000 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-kerko-470-nf-16-v-10-125-c-mur-grm188r61c47-p246847.html?&trstct=pos_0" H 8000 5150 50  0001 C CNN
+	1    8000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5CF10083
+P 7450 5150
+F 0 "C12" H 7565 5196 50  0000 L CNN
+F 1 "10µ" H 7565 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7488 5000 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 7450 5150 50  0001 C CNN
+	1    7450 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0141
+U 1 1 5CF10089
+P 7450 5400
+F 0 "#PWR0141" H 7450 5150 50  0001 C CNN
+F 1 "GND" H 7455 5227 50  0000 C CNN
+F 2 "" H 7450 5400 50  0001 C CNN
+F 3 "" H 7450 5400 50  0001 C CNN
+	1    7450 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0142
+U 1 1 5CF1008F
+P 7450 4900
+F 0 "#PWR0142" H 7450 4750 50  0001 C CNN
+F 1 "+5V" H 7465 5073 50  0000 C CNN
+F 2 "" H 7450 4900 50  0001 C CNN
+F 3 "" H 7450 4900 50  0001 C CNN
+	1    7450 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4900 7450 5000
+Wire Wire Line
+	7450 5300 7450 5400
+$Comp
+L Device:R R7
+U 1 1 5CF198DA
+P 5900 5750
+F 0 "R7" H 5970 5796 50  0000 L CNN
+F 1 "10k" H 5970 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5830 5750 50  0001 C CNN
+F 3 "~" H 5900 5750 50  0001 C CNN
+	1    5900 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 5750 6150 5750
+Wire Wire Line
+	6150 5750 6150 5950
+Connection ~ 6150 5950
+Wire Wire Line
+	6150 5950 6050 5950
+$Comp
+L Device:R R5
+U 1 1 5CF21202
+P 5850 4000
+F 0 "R5" H 5920 4046 50  0000 L CNN
+F 1 "10k" H 5920 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5780 4000 50  0001 C CNN
+F 3 "~" H 5850 4000 50  0001 C CNN
+	1    5850 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-5V #PWR0143
+U 1 1 5CF21615
+P 5650 3900
+F 0 "#PWR0143" H 5650 3750 50  0001 C CNN
+F 1 "-5V" H 5665 4073 50  0000 C CNN
+F 2 "" H 5650 3900 50  0001 C CNN
+F 3 "" H 5650 3900 50  0001 C CNN
+	1    5650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3900 5650 4000
+Wire Wire Line
+	5650 4000 5700 4000
+Wire Wire Line
+	6000 4000 6100 4000
+Wire Wire Line
+	6100 4000 6100 4300
+Connection ~ 6100 4300
+Wire Wire Line
+	6100 4300 6000 4300
+Wire Wire Line
+	7250 4200 7250 4450
+Wire Wire Line
+	9300 4550 9350 4550
+Wire Wire Line
+	9350 4550 9350 4900
+Wire Wire Line
+	9350 4950 8650 4950
+Wire Wire Line
+	8650 4950 8650 4650
+Wire Wire Line
+	8650 4650 8700 4650
+Wire Wire Line
+	9300 5400 9350 5400
+Wire Wire Line
+	9350 5400 9350 5800
+Wire Wire Line
+	9350 5800 8650 5800
+Wire Wire Line
+	8650 5800 8650 5500
+Wire Wire Line
+	8650 5500 8700 5500
+$Comp
+L Device:C C14
+U 1 1 5CF3E7EC
+P 7600 6050
+F 0 "C14" H 7715 6096 50  0000 L CNN
+F 1 "10µ" H 7715 6005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7638 5900 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 7600 6050 50  0001 C CNN
+	1    7600 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5CF4F00D
+P 7600 4450
+F 0 "C13" H 7715 4496 50  0000 L CNN
+F 1 "10µ" H 7715 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7638 4300 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 7600 4450 50  0001 C CNN
+	1    7600 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 4450 7250 4450
+Connection ~ 7250 4450
+Wire Wire Line
+	7250 4450 7250 4950
+Wire Wire Line
+	7750 4450 8450 4450
+Wire Wire Line
+	8700 5300 8450 5300
+Wire Wire Line
+	8300 5300 8300 6050
+Wire Wire Line
+	8300 6050 7750 6050
+Wire Wire Line
+	7250 5350 7250 6050
+Wire Wire Line
+	7450 6050 7250 6050
+Connection ~ 7250 6050
+$Comp
+L Connector:AudioJack2_Ground_Switch J3
+U 1 1 5CF7FEF4
+P 10550 5100
+F 0 "J3" H 10582 5525 50  0000 C CNN
+F 1 "AudioJack2_Ground_Switch" H 10582 5434 50  0000 C CNN
+F 2 "custom:Jack_3.5mm_Horizontal" H 10550 5300 50  0001 C CNN
+F 3 "~" H 10550 5300 50  0001 C CNN
+	1    10550 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 4900 10250 4900
+Connection ~ 9350 4900
+Wire Wire Line
+	9350 4900 9350 4950
+Wire Wire Line
+	10350 5000 10250 5000
+Wire Wire Line
+	10250 5000 10250 4900
+Connection ~ 10250 4900
+Wire Wire Line
+	10250 4900 9350 4900
+Wire Wire Line
+	10350 5200 10250 5200
+Wire Wire Line
+	9350 5200 9350 5400
+Connection ~ 9350 5400
+Wire Wire Line
+	10350 5100 10250 5100
+Wire Wire Line
+	10250 5100 10250 5200
+Connection ~ 10250 5200
+Wire Wire Line
+	10250 5200 9350 5200
+$Comp
+L power:GND #PWR0144
+U 1 1 5CFA098A
+P 10550 5500
+F 0 "#PWR0144" H 10550 5250 50  0001 C CNN
+F 1 "GND" H 10555 5327 50  0000 C CNN
+F 2 "" H 10550 5500 50  0001 C CNN
+F 3 "" H 10550 5500 50  0001 C CNN
+	1    10550 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 5500 10550 5400
+$Comp
+L Device:R R9
+U 1 1 5CFA8487
+P 8450 4700
+F 0 "R9" H 8520 4746 50  0000 L CNN
+F 1 "100k" H 8520 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8380 4700 50  0001 C CNN
+F 3 "~" H 8450 4700 50  0001 C CNN
+	1    8450 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5CFA908B
+P 8450 5550
+F 0 "R10" H 8520 5596 50  0000 L CNN
+F 1 "100k" H 8520 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8380 5550 50  0001 C CNN
+F 3 "~" H 8450 5550 50  0001 C CNN
+	1    8450 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0145
+U 1 1 5CFA9285
+P 8450 4900
+F 0 "#PWR0145" H 8450 4650 50  0001 C CNN
+F 1 "GND" H 8455 4727 50  0000 C CNN
+F 2 "" H 8450 4900 50  0001 C CNN
+F 3 "" H 8450 4900 50  0001 C CNN
+	1    8450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5CFA9613
+P 8450 5800
+F 0 "#PWR0146" H 8450 5550 50  0001 C CNN
+F 1 "GND" H 8455 5627 50  0000 C CNN
+F 2 "" H 8450 5800 50  0001 C CNN
+F 3 "" H 8450 5800 50  0001 C CNN
+	1    8450 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 4550 8450 4450
+Connection ~ 8450 4450
+Wire Wire Line
+	8450 4450 8700 4450
+Wire Wire Line
+	8450 5400 8450 5300
+Connection ~ 8450 5300
+Wire Wire Line
+	8450 5300 8300 5300
+Wire Wire Line
+	8450 4900 8450 4850
+Wire Wire Line
+	8450 5800 8450 5700
+$Comp
+L Interface_Optical:TSDP341xx U4
+U 1 1 5CFC272C
+P 1200 6550
+F 0 "U4" H 1188 6975 50  0000 C CNN
+F 1 "TSDP341xx" H 1188 6884 50  0000 C CNN
+F 2 "OptoDevice:Vishay_MOLD-3Pin" H 1150 6175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/82667/tsdp341.pdf" H 1850 6850 50  0001 C CNN
+	1    1200 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 6550 2    50   Output ~ 0
+rc5
+Text GLabel 3800 4900 2    50   Input ~ 0
+rc5
+Wire Wire Line
+	3800 4900 3350 4900
+Wire Wire Line
+	1800 6550 1600 6550
+$Comp
+L power:GND #PWR0147
+U 1 1 5D00E30A
+P 1700 6800
+F 0 "#PWR0147" H 1700 6550 50  0001 C CNN
+F 1 "GND" H 1705 6627 50  0000 C CNN
+F 2 "" H 1700 6800 50  0001 C CNN
+F 3 "" H 1700 6800 50  0001 C CNN
+	1    1700 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6800 1700 6750
+Wire Wire Line
+	1700 6750 1600 6750
+$Comp
+L power:+5V #PWR0148
+U 1 1 5D014B34
+P 1700 6350
+F 0 "#PWR0148" H 1700 6200 50  0001 C CNN
+F 1 "+5V" H 1715 6523 50  0000 C CNN
+F 2 "" H 1700 6350 50  0001 C CNN
+F 3 "" H 1700 6350 50  0001 C CNN
+	1    1700 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6350 1600 6350
+Wire Wire Line
+	2200 6750 2200 6850
+Wire Wire Line
+	2200 6350 2200 6450
+$Comp
+L power:+5V #PWR0149
+U 1 1 5D01CB9C
+P 2200 6350
+F 0 "#PWR0149" H 2200 6200 50  0001 C CNN
+F 1 "+5V" H 2215 6523 50  0000 C CNN
+F 2 "" H 2200 6350 50  0001 C CNN
+F 3 "" H 2200 6350 50  0001 C CNN
+	1    2200 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5D01CBA2
+P 2200 6850
+F 0 "#PWR0150" H 2200 6600 50  0001 C CNN
+F 1 "GND" H 2205 6677 50  0000 C CNN
+F 2 "" H 2200 6850 50  0001 C CNN
+F 3 "" H 2200 6850 50  0001 C CNN
+	1    2200 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 5D01CBA8
+P 2200 6600
+F 0 "C16" H 2315 6646 50  0000 L CNN
+F 1 "10µ" H 2315 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2238 6450 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 2200 6600 50  0001 C CNN
+	1    2200 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5CE732D1
+P 4150 2500
+F 0 "J4" H 4230 2492 50  0000 L CNN
+F 1 "Conn_01x02" H 4230 2401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 2500 50  0001 C CNN
+F 3 "~" H 4150 2500 50  0001 C CNN
+	1    4150 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0151
+U 1 1 5CE745D7
+P 3900 2700
+F 0 "#PWR0151" H 3900 2450 50  0001 C CNN
+F 1 "GND" H 3905 2527 50  0000 C CNN
+F 2 "" H 3900 2700 50  0001 C CNN
+F 3 "" H 3900 2700 50  0001 C CNN
+	1    3900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0152
+U 1 1 5CE74A53
+P 3900 2400
+F 0 "#PWR0152" H 3900 2250 50  0001 C CNN
+F 1 "+5V" H 3915 2573 50  0000 C CNN
+F 2 "" H 3900 2400 50  0001 C CNN
+F 3 "" H 3900 2400 50  0001 C CNN
+	1    3900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2500 3900 2500
+Wire Wire Line
+	3900 2500 3900 2400
+Wire Wire Line
+	3950 2600 3900 2600
+Wire Wire Line
+	3900 2600 3900 2700
+$Comp
+L Connector:Conn_01x03_Male J5
+U 1 1 5CE8B7E6
+P 10500 1250
+F 0 "J5" H 10472 1274 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10472 1183 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 10500 1250 50  0001 C CNN
+F 3 "~" H 10500 1250 50  0001 C CNN
+	1    10500 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5CE97430
+P 10150 1450
+F 0 "#PWR0153" H 10150 1200 50  0001 C CNN
+F 1 "GND" H 10155 1277 50  0000 C CNN
+F 2 "" H 10150 1450 50  0001 C CNN
+F 3 "" H 10150 1450 50  0001 C CNN
+	1    10150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0154
+U 1 1 5CE9E5ED
+P 9800 1200
+F 0 "#PWR0154" H 9800 1050 50  0001 C CNN
+F 1 "+5V" H 9815 1373 50  0000 C CNN
+F 2 "" H 9800 1200 50  0001 C CNN
+F 3 "" H 9800 1200 50  0001 C CNN
+	1    9800 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1250 9800 1200
+Wire Wire Line
+	10150 1450 10150 1350
+Wire Wire Line
+	10150 1350 10300 1350
+Text GLabel 3550 5100 2    50   Output ~ 0
+Ext1
+Text GLabel 3550 5200 2    50   Output ~ 0
+Ext2
+Wire Wire Line
+	3550 5100 3350 5100
+Wire Wire Line
+	3550 5200 3350 5200
+Text GLabel 10150 1150 0    50   Input ~ 0
+Ext1
+Wire Wire Line
+	10150 1150 10300 1150
+Wire Wire Line
+	10300 1250 9800 1250
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5CEE18B8
+P 10500 2400
+F 0 "J6" H 10472 2424 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10472 2333 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 10500 2400 50  0001 C CNN
+F 3 "~" H 10500 2400 50  0001 C CNN
+	1    10500 2400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 5CEE18BE
+P 10150 2600
+F 0 "#PWR0155" H 10150 2350 50  0001 C CNN
+F 1 "GND" H 10155 2427 50  0000 C CNN
+F 2 "" H 10150 2600 50  0001 C CNN
+F 3 "" H 10150 2600 50  0001 C CNN
+	1    10150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0156
+U 1 1 5CEE18C4
+P 9800 2350
+F 0 "#PWR0156" H 9800 2200 50  0001 C CNN
+F 1 "+5V" H 9815 2523 50  0000 C CNN
+F 2 "" H 9800 2350 50  0001 C CNN
+F 3 "" H 9800 2350 50  0001 C CNN
+	1    9800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2400 9800 2350
+Wire Wire Line
+	10150 2600 10150 2500
+Wire Wire Line
+	10150 2500 10300 2500
+Text GLabel 10150 2300 0    50   Input ~ 0
+Ext2
+Wire Wire Line
+	10150 2300 10300 2300
+Wire Wire Line
+	10300 2400 9800 2400
+$Comp
+L Device:C C18
+U 1 1 5CEE8EB4
+P 9800 2650
+F 0 "C18" V 9548 2650 50  0000 C CNN
+F 1 "10µ" V 9639 2650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9838 2500 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 9800 2650 50  0001 C CNN
+	1    9800 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5CEE95C5
+P 9800 2900
+F 0 "#PWR0157" H 9800 2650 50  0001 C CNN
+F 1 "GND" H 9805 2727 50  0000 C CNN
+F 2 "" H 9800 2900 50  0001 C CNN
+F 3 "" H 9800 2900 50  0001 C CNN
+	1    9800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2900 9800 2800
+Wire Wire Line
+	9800 2500 9800 2400
+Connection ~ 9800 2400
+$Comp
+L Device:C C17
+U 1 1 5CF15804
+P 9800 1500
+F 0 "C17" V 9548 1500 50  0000 C CNN
+F 1 "10µ" V 9639 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9838 1350 50  0001 C CNN
+F 3 "https://www.reichelt.at/smd-vielschichtkondensator-g0603-10-f-6-3v-x5r-g0603-10-6-p89728.html?&trstct=pos_0" H 9800 1500 50  0001 C CNN
+	1    9800 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0158
+U 1 1 5CF1580E
+P 9800 1750
+F 0 "#PWR0158" H 9800 1500 50  0001 C CNN
+F 1 "GND" H 9805 1577 50  0000 C CNN
+F 2 "" H 9800 1750 50  0001 C CNN
+F 3 "" H 9800 1750 50  0001 C CNN
+	1    9800 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1750 9800 1650
+Wire Wire Line
+	9800 1350 9800 1250
+Connection ~ 9800 1250
+NoConn ~ 3350 5400
+NoConn ~ 3350 5300
+NoConn ~ 3350 4700
+NoConn ~ 3350 4200
+$Comp
+L power:-5V #PWR0124
+U 1 1 5CE70409
+P 4800 7400
+F 0 "#PWR0124" H 4800 7250 50  0001 C CNN
+F 1 "-5V" H 4815 7573 50  0000 C CNN
+F 2 "" H 4800 7400 50  0001 C CNN
+F 3 "" H 4800 7400 50  0001 C CNN
+	1    4800 7400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 7400 4800 7200
+$Comp
+L power:-5V #PWR0128
+U 1 1 5CE7FC11
+P 5900 6650
+F 0 "#PWR0128" H 5900 6500 50  0001 C CNN
+F 1 "-5V" H 5915 6823 50  0000 C CNN
+F 2 "" H 5900 6650 50  0001 C CNN
+F 3 "" H 5900 6650 50  0001 C CNN
+	1    5900 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 6650 5350 6800
+Wire Wire Line
+	5900 6650 5900 6800
+$Comp
+L power:-5V #PWR?
+U 1 1 5D00C3F6
+P 5500 5700
+F 0 "#PWR?" H 5500 5550 50  0001 C CNN
+F 1 "-5V" H 5515 5873 50  0000 C CNN
+F 2 "" H 5500 5700 50  0001 C CNN
+F 3 "" H 5500 5700 50  0001 C CNN
+	1    5500 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5750 5500 5700
+Wire Wire Line
+	5500 5750 5750 5750
+$EndSCHEMATC

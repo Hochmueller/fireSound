@@ -1,0 +1,67 @@
+Source,C:\Users\u20b16\Documents\FireSound\firesound\fireSound\fireSound.sch
+Kicad Rev,Eeschema (5.1.2)-1
+Generated Date,27.05.2019 11:57:48
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+J1,USB_B_Mini,Connector,USB_B_Mini
+R1,10k,Device,R
+R2,10k,Device,R
+R3,10k,Device,R
+C1,680µF,Device,CP
+C3,470n,Device,C
+U1,ATtiny84A-SSU,MCU_Microchip_ATtiny,ATtiny84A-SSU
+Q1,AO3415A,Device,Q_PMOS_DGS
+Q2,Q_NMOS_IRLML6244,Device,Q_NMOS_DSG
+C2,10µ,Device,C
+C5,10µ,Device,C
+C6,10µ,Device,C
+D1,B240,Diode,B240
+D2,B240,Diode,B240
+C7,680µF,Device,CP
+C4,10µ,Device,C
+J2,AudioJack2_Ground_Switch,Connector,AudioJack2_Ground_Switch
+U2,TL084,Amplifier_Operational,TL084
+U3,MCP42010,Potentiometer_Digital,MCP42010
+C11,470n,Device,C
+C10,10µ,Device,C
+R4,10k,Device,R
+R6,10k,Device,R
+R8,10k,Device,R
+C8,10µ,Device,C
+C9,470n,Device,C
+C15,470n,Device,C
+C12,10µ,Device,C
+R7,10k,Device,R
+R5,10k,Device,R
+C14,10µ,Device,C
+C13,10µ,Device,C
+J3,AudioJack2_Ground_Switch,Connector,AudioJack2_Ground_Switch
+R9,100k,Device,R
+R10,100k,Device,R
+U4,TSDP341xx,Interface_Optical,TSDP341xx
+C16,10µ,Device,C
+J4,Conn_01x02,Connector_Generic,Conn_01x02
+J5,Conn_01x03_Male,Connector,Conn_01x03_Male
+J6,Conn_01x03_Male,Connector,Conn_01x03_Male
+C18,10µ,Device,C
+C17,10µ,Device,C
+C19,10µ,Device,C
+J7,Conn_01x03_Male,Connector,Conn_01x03_Male
+K1,DIPxx-1Axx-11x,JV_05,DIPxx-1Axx-11x
+Q3,Q_NMOS_IRLML6244,Device,Q_NMOS_DSG
+D3,B240,Diode,B240
+C20,10µ,Device,C
+C21,680µF,Device,CP
+J8,Screw_Terminal_01x02,Connector,Screw_Terminal_01x02
+J9,Conn_01x03_Male,Connector,Conn_01x03_Male
+K2,DIPxx-1Axx-11x,JV_05,DIPxx-1Axx-11x
+Q4,Q_NMOS_IRLML6244,Device,Q_NMOS_DSG
+D4,B240,Diode,B240
+C22,10µ,Device,C
+C23,680µF,Device,CP
+J10,Screw_Terminal_01x02,Connector,Screw_Terminal_01x02
